@@ -47,14 +47,14 @@ const MemeGenerator = () => {
 
   return (
     <>
-      <div className="flex w-full gap-8 row">
+      <form className="flex w-full gap-8 row">
         <div className="flex flex-col w-full col">
             <TextInput inputId="top-text-input" labelContent="Top Text" inputPlaceholder="Top Text" inputValue={topText} onChangeHandler={(e) => setTopText(e.target.value)}/>
         </div>
         <div className="flex flex-col w-full col">
             <TextInput inputId="bottom-text-input" labelContent="Bottom Text" inputPlaceholder="Bottom Text" inputValue={bottomText} onChangeHandler={(e) => setBottomText(e.target.value)}/>
         </div>
-      </div>
+      </form>
       <div className="w-full row">
           <Button cta="true" icon={memeGeneratorIcon} onClickHandler={() => getRandomMemeImage(memeImages)}>Get Random Meme Image</Button>
       </div>
