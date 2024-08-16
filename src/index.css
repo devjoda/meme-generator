@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-anton::before,
+.font-anton::after {
+  font-family: 'Anton';
+  text-shadow:4px 4px 0 #000,
+            -4px -4px 0 #000,
+            4px -4px 0 #000,
+            -4px 4px 0 #000,
+            0px 4px 0 #000,
+            4px 0px 0 #000,
+            0px -4px 0 #000,
+            -4px 0px 0 #000;
+}
